@@ -1,0 +1,24 @@
+{
+  "name": "css-natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geonwoo-jeong/css-natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geonwoo-jeong/css-natours/issues"
+  },
+  "homepage": "https://github.com/geonwoo-jeong/css-natours#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0"
+  }
+}
