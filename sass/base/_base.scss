@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; // box-sizing: inherit; -> for plugins and other components, default setting is body's box-sizing 
+}
+
+html {
+    font-size: 10px; // https://devlog.jwgo.kr/2019/01/16/why-we-use-625p-instead-of-10px/
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 60%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 70%;
+    }
+
+    @include respond(big-desctop) {
+        font-size: 80%;
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+    /* default box-sizing */
+}
